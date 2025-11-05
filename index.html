@@ -9,29 +9,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
 	
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-	<link rel="stylesheet" type="text/css" href="css/owl.transitions.css"/>
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
-
-
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/ajaxchimp.js"></script>
-
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/wow.js"></script>
-	<script type="text/javascript" src="js/parallax.js"></script>
-	<script type="text/javascript" src="js/nicescroll.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/scrollTo.js"></script>
+	<!-- Critical CSS inlined for above-the-fold content -->
+	<style>
+		@font-face{font-family:'open_regular';src:url('../fonts/opensans-regular.woff') format('woff');font-weight:normal;font-style:normal}
+		@font-face{font-family:'open_bold';src:url('../fonts/opensans-bold.woff') format('woff');font-weight:normal;font-style:normal}
+		body{background:#20866e;padding:0;margin:0}
+		.container{max-width:1130px}
+		header{position:relative;display:block;width:100%;height:150px;z-index:99;background-image:linear-gradient(#23a94c00,#248888);clip-path:polygon(0 0,100% 0,100% 100%,0 calc(100% - 4vw))}
+		header .logo{display:table-cell;margin:45px 100px 0 0}
+		header .logo img{width:200px;border-radius:5px 20px 5px;box-shadow:0 8px 6px -6px black}
+		header nav{margin-top:50px;display:table-cell}
+		header nav li{float:left;margin-left:40px}
+		header nav li:first-child{margin:0}
+		header nav li a{color:#fff;font-family:"open_regular",Helvetica,Arial,sans-serif;font-size:16px;transition:all .2s linear}
+		header .social{display:table-cell;margin-top:45px}
+		header .social li{float:left;margin-left:20px;border-radius:5px 20px 5px;box-shadow:0 8px 6px -6px black}
+		.hero{display:block;position:relative;width:100%;height:560px;background:url('../img/hero.jpg') no-repeat fixed center center;background-size:cover}
+		.hero .caption{position:absolute;max-width:550px;margin-left:80px;top:50%;transform:translate(0,-50%)}
+		.hero .caption h1{color:#525252;font-family:"open_bold",Helvetica,Arial,sans-serif;font-size:34px;font-weight:bold;word-break:break-word}
+		.hero .caption p{color:#6d6c6c;font-family:"open_regular",Helvetica,Arial,sans-serif;font-size:16px;line-height:30px;margin:15px 0 35px 0}
+		img{max-width:100%;height:auto}
+	</style>
+	
+	<!-- Load non-critical CSS asynchronously -->
+	<link rel="preload" href="css/combined.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/combined.min.css"></noscript>
 </head>
 <body>
 	<!--  Header Section -->
 	<header>
 		<div class="container">
 			<div class="logo pull-left animated wow fadeInLeft">
-				<img class="logo-image" src="img/logo.png" alt="" title="">
+				<img class="logo-image" src="img/logo.png" alt="Keiko Corp Logo" title="Keiko Corp">
 			</div>
 
 
@@ -45,9 +54,9 @@
 
 			<div class="social pull-right">
 				<ul class="list-unstyled">
-					<li class="animated wow fadeInRight" data-wow-delay=".2s"><a href="#"><img src="img/facebook.png" alt="" title=""></a></li>
-					<li class="animated wow fadeInRight" data-wow-delay=".1s"><a href="#"><img src="img/twitter.png" alt="" title=""></a></li>
-					<li class="animated wow fadeInRight" data-wow-delay="0s"><a href="#"><img src="img/google.png" alt="" title=""></a></li>
+					<li class="animated wow fadeInRight" data-wow-delay=".2s"><a href="#"><img loading="lazy" src="img/facebook.png" alt="Facebook" title="Facebook"></a></li>
+					<li class="animated wow fadeInRight" data-wow-delay=".1s"><a href="#"><img loading="lazy" src="img/twitter.png" alt="Twitter" title="Twitter"></a></li>
+					<li class="animated wow fadeInRight" data-wow-delay="0s"><a href="#"><img loading="lazy" src="img/google.png" alt="Google" title="Google"></a></li>
 				</ul>
 			</div>
 
@@ -92,16 +101,16 @@
 		<div class="container">
 			<ul class="list-unstyled text-center clearfix">
 				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown">
-					<img src="img/google_logo.png" alt="" title="">
+					<img loading="lazy" src="img/google_logo.png" alt="Google" title="Google">
 				</li>
 				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".2s">
-					<img src="img/facebook_logo.png" alt="" title="">
+					<img loading="lazy" src="img/facebook_logo.png" alt="Facebook" title="Facebook">
 				</li>
 				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".3s">
-					<img src="img/yahoo_logo.png" alt="" title="">
+					<img loading="lazy" src="img/yahoo_logo.png" alt="Yahoo" title="Yahoo">
 				</li>
 				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".4s">
-					<img src="img/paypal_logo.png" alt="" title="">
+					<img loading="lazy" src="img/paypal_logo.png" alt="PayPal" title="PayPal">
 				</li>
 			</ul>
 		</div>
@@ -119,7 +128,7 @@
 			<div class="row">
 				<div class="col-md-6 text-center animated wow fadeInLeft">
 					<div class="iphone">
-						<img src="img/iphone.png" alt="" titl="">
+						<img loading="lazy" src="img/iphone.png" alt="iPhone mockup" title="iPhone App">
 					</div>
 				</div>
 				<div class="col-md-6 animated wow fadeInRight">
@@ -171,34 +180,34 @@
 
 			<div class="row text-center">
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay="0s">
-					<img src="img/f_icon1.png" alt="" title="">
+					<img loading="lazy" src="img/f_icon1.png" alt="Feature icon 1" title="Feature 1">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".1s">
-					<img src="img/f_icon2.png" alt="" title="">
+					<img loading="lazy" src="img/f_icon2.png" alt="Feature icon 2" title="Feature 2">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".2s">
-					<img src="img/f_icon3.png" alt="" title="">
+					<img loading="lazy" src="img/f_icon3.png" alt="Feature icon 3" title="Feature 3">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
 			</div>
 			<div class="row text-center">
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay="0s">
-					<img src="img/f_icon4.png" alt="" title="">
+					<img loading="lazy" src="img/f_icon4.png" alt="Feature icon 4" title="Feature 4">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".1s">
-					<img src="img/f_icon5.png" alt="" title="">
+					<img loading="lazy" src="img/f_icon5.png" alt="Feature icon 5" title="Feature 5">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".2s">
-					<img src="img/f_icon6.png" alt="" title="">
+					<img loading="lazy" src="img/f_icon6.png" alt="Feature icon 6" title="Feature 6">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
@@ -283,18 +292,20 @@
 	<footer>
 		<ul class="list-unstyled list-inline app_platform">
 			<li class="animated wow fadeInDown" data-wow-delay="0s">
-				<a href=""><img src="img/android_icon.png" alt="" title=""></a>
+				<a href=""><img loading="lazy" src="img/android_icon.png" alt="Android" title="Android App"></a>
 			</li>
 			<li class="animated wow fadeInDown" data-wow-delay=".1s">
-				<a href=""><img src="img/ios_icon.png" alt="" title=""></a>
+				<a href=""><img loading="lazy" src="img/ios_icon.png" alt="iOS" title="iOS App"></a>
 			</li>
 			<li class="animated wow fadeInDown" data-wow-delay=".2s">
-				<a href=""><img src="img/windows_icon.png" alt="" title=""></a>
+				<a href=""><img loading="lazy" src="img/windows_icon.png" alt="Windows" title="Windows App"></a>
 			</li>
 		</ul>
 		<p class="copyright animated wow fadeIn" data-wow-duration="2s"> <strong>Pixelhint</strong>
 	</footer>
 	<!--  End Footer Section  -->
 
+	<!-- Combined JavaScript loaded with defer for non-blocking -->
+	<script defer src="js/combined.min.js"></script>
 </body>
 </html>
