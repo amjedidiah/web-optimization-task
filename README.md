@@ -33,6 +33,10 @@ Landing page for Keiko Corp with focus on performance optimization techniques in
 - **Desktop:** Performance 92 | Accessibility 100 | Best Practices 100 | SEO 100
 - **Mobile:** Performance 93 | Accessibility 100 | Best Practices 100 | SEO 100
 
+| Desktop | Mobile |
+|---------|--------|
+| ![Desktop PageSpeed Score](https://i.ibb.co/tpkCxGfF/Screenshot-2025-11-06-at-22-49-49.png) | ![Mobile PageSpeed Score](https://i.ibb.co/JbPkXMD/Screenshot-2025-11-06-at-22-49-59.png) |
+
 ### Key Improvements
 
 - **Mobile Performance:** +17 points (76 → 93)
