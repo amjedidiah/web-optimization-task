@@ -21,6 +21,26 @@ Landing page for Keiko Corp with focus on performance optimization techniques in
 - jQuery
 - Mailchimp integration
 
+## Performance Scores
+
+**Before Optimization:** [Original Site](https://pagespeed.web.dev/analysis/https-aneagoie-github-io-keiko-corp/7ikrerbkdq?form_factor=mobile)
+
+- **Desktop:** Performance 96 | Accessibility 90 | Best Practices 100 | SEO 91
+- **Mobile:** Performance 76 | Accessibility 63 | Best Practices 96 | SEO 91
+
+**After Optimization:** [Optimized Site](https://pagespeed.web.dev/analysis/https-amjedidiah-github-io-web-optimization-task/v7j96wjtn2?form_factor=desktop)
+
+- **Desktop:** Performance 92 | Accessibility 100 | Best Practices 100 | SEO 100
+- **Mobile:** Performance 93 | Accessibility 100 | Best Practices 100 | SEO 100
+
+### Key Improvements
+
+- **Mobile Performance:** +17 points (76 → 93)
+- **Mobile Accessibility:** +37 points (63 → 100)
+- **Mobile Best Practices:** +4 points (96 → 100)
+- **Desktop Accessibility:** +10 points (90 → 100)
+- **SEO:** +9 points (91 → 100)
+
 ---
 
 *Project from [Zero To Mastery](https://zerotomastery.io/)*
