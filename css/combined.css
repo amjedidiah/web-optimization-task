@@ -3903,6 +3903,29 @@ footer .copyright a{
 
 /*		Responsive CSS 		*/
 
+@media (min-width: 768px) and (max-width: 991px) {
+	/*		Header adjustments for tablet 		*/
+	header nav{
+		margin-top: 50px;
+	}
+	
+	header nav li{
+		margin-left: 25px;
+	}
+	
+	header .social{
+		margin-top: 45px;
+	}
+	
+	header .social li{
+		margin-left: 10px;
+	}
+	
+	header .logo img{
+		width: 160px;
+	}
+}
+
 @media (max-width: 360px) {
 	.featured_on li{
 		display: block;
