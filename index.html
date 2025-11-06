@@ -7,12 +7,18 @@
 	<!--  App Description  -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<meta name="description" content="Keiko Corp - Creators of Robofriends and SmartBrain. Developers of the future, building innovative applications for today.">
 
+	
+	<!-- Preload critical resources for LCP optimization -->
+	<link rel="preload" href="img/hero.webp" as="image" fetchpriority="high">
+	<link rel="preload" href="fonts/opensans-bold.woff" as="font" type="font/woff" crossorigin>
+	<link rel="preload" href="fonts/opensans-regular.woff" as="font" type="font/woff" crossorigin>
 	
 	<!-- Critical CSS inlined for above-the-fold content -->
 	<style>
-		@font-face{font-family:'open_regular';src:url('../fonts/opensans-regular.woff') format('woff');font-weight:normal;font-style:normal}
-		@font-face{font-family:'open_bold';src:url('../fonts/opensans-bold.woff') format('woff');font-weight:normal;font-style:normal}
+		@font-face{font-family:'open_regular';src:url('../fonts/opensans-regular.woff') format('woff');font-weight:normal;font-style:normal;font-display:swap}
+		@font-face{font-family:'open_bold';src:url('../fonts/opensans-bold.woff') format('woff');font-weight:normal;font-style:normal;font-display:swap}
 		body{background:#20866e;padding:0;margin:0}
 		.container{max-width:1130px}
 		header{position:relative;display:block;width:100%;height:150px;z-index:99;background-image:linear-gradient(#23a94c00,#248888);clip-path:polygon(0 0,100% 0,100% 100%,0 calc(100% - 4vw))}
@@ -24,11 +30,14 @@
 		header nav li a{color:#fff;font-family:"open_regular",Helvetica,Arial,sans-serif;font-size:16px;transition:all .2s linear}
 		header .social{display:table-cell;margin-top:45px}
 		header .social li{float:left;margin-left:20px;border-radius:5px 20px 5px;box-shadow:0 8px 6px -6px black}
-		.hero{display:block;position:relative;width:100%;height:560px;background:url('../img/hero.jpg') no-repeat fixed center center;background-size:cover}
+		.hero{display:block;position:relative;width:100%;height:560px;background:url('../img/hero.webp') no-repeat fixed center center;background-size:cover}
 		.hero .caption{position:absolute;max-width:550px;margin-left:80px;top:50%;transform:translate(0,-50%)}
 		.hero .caption h1{color:#525252;font-family:"open_bold",Helvetica,Arial,sans-serif;font-size:34px;font-weight:bold;word-break:break-word}
 		.hero .caption p{color:#6d6c6c;font-family:"open_regular",Helvetica,Arial,sans-serif;font-size:16px;line-height:30px;margin:15px 0 35px 0}
 		img{max-width:100%;height:auto}
+		.burger_icon{color:#000!important;background-color:#fff!important;padding:5px 10px;cursor:pointer;border:1px solid #ccc}
+		#mc-email{color:#000!important;background-color:#fff!important}
+		#mc-email::placeholder{color:#595959!important}
 	</style>
 	
 	<!-- Load non-critical CSS asynchronously -->
@@ -36,27 +45,28 @@
 	<noscript><link rel="stylesheet" href="css/combined.min.css"></noscript>
 </head>
 <body>
+	<main>
 	<!--  Header Section -->
 	<header>
 		<div class="container">
 			<div class="logo pull-left animated wow fadeInLeft">
-				<img class="logo-image" src="img/logo.png" alt="Keiko Corp Logo" title="Keiko Corp">
+				<img class="logo-image" src="img/logo-200.png" srcset="img/logo-200.png 1x, img/logo-400.png 2x" alt="Keiko Corp Logo" title="Keiko Corp" width="200" height="45">
 			</div>
 
 
 			<nav class="pull-left">
-				<ul class="list-unstyled">
-					<li class="animated wow fadeInLeft" data-wow-delay="0s"><a href="#about">About</a></li>
-					<li class="animated wow fadeInLeft" data-wow-delay=".1s"><a href="#app_features">Features</a></li>
-					<li class="animated wow fadeInLeft" data-wow-delay=".2s"><a href="#testimonials">Testimonials</a></li>
+				<ul class="list-unstyled" role="list">
+					<li class="animated wow fadeInLeft" data-wow-delay="0s" role="listitem"><a href="#about">About</a></li>
+					<li class="animated wow fadeInLeft" data-wow-delay=".1s" role="listitem"><a href="#app_features">Features</a></li>
+					<li class="animated wow fadeInLeft" data-wow-delay=".2s" role="listitem"><a href="#testimonials">Testimonials</a></li>
 				</ul>
 			</nav>
 
 			<div class="social pull-right">
-				<ul class="list-unstyled">
-					<li class="animated wow fadeInRight" data-wow-delay=".2s"><a href="#"><img loading="lazy" src="img/facebook.png" alt="Facebook" title="Facebook"></a></li>
-					<li class="animated wow fadeInRight" data-wow-delay=".1s"><a href="#"><img loading="lazy" src="img/twitter.png" alt="Twitter" title="Twitter"></a></li>
-					<li class="animated wow fadeInRight" data-wow-delay="0s"><a href="#"><img loading="lazy" src="img/google.png" alt="Google" title="Google"></a></li>
+				<ul class="list-unstyled" role="list">
+					<li class="animated wow fadeInRight" data-wow-delay=".2s" role="listitem"><a href="#"><img loading="lazy" src="img/facebook-50.png" srcset="img/facebook-50.png 1x, img/facebook-100.png 2x" alt="Facebook" title="Facebook" width="50" height="50"></a></li>
+					<li class="animated wow fadeInRight" data-wow-delay=".1s" role="listitem"><a href="#"><img loading="lazy" src="img/twitter-50.png" srcset="img/twitter-50.png 1x, img/twitter-100.png 2x" alt="Twitter" title="Twitter" width="50" height="50"></a></li>
+					<li class="animated wow fadeInRight" data-wow-delay="0s" role="listitem"><a href="#"><img loading="lazy" src="img/google-50.png" srcset="img/google-50.png 1x, img/google-100.png 2x" alt="Google" title="Google" width="50" height="50"></a></li>
 				</ul>
 			</div>
 
@@ -99,18 +109,18 @@
 	<!--  Featured On Section  -->
 	<section class="featured_on">
 		<div class="container">
-			<ul class="list-unstyled text-center clearfix">
-				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown">
-					<img loading="lazy" src="img/google_logo.png" alt="Google" title="Google">
+			<ul class="list-unstyled text-center clearfix" role="list">
+				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" role="listitem">
+					<img loading="lazy" src="img/google_logo-200w.png" srcset="img/google_logo-200w.png 200w, img/google_logo-300w.png 300w" sizes="(max-width: 768px) 50vw, 200px" alt="Google" title="Google" width="200" height="69">
 				</li>
-				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".2s">
-					<img loading="lazy" src="img/facebook_logo.png" alt="Facebook" title="Facebook">
+				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".2s" role="listitem">
+					<img loading="lazy" src="img/facebook_logo-200w.png" srcset="img/facebook_logo-200w.png 200w, img/facebook_logo-300w.png 300w" sizes="(max-width: 768px) 50vw, 200px" alt="Facebook" title="Facebook" width="200" height="68">
 				</li>
-				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".3s">
-					<img loading="lazy" src="img/yahoo_logo.png" alt="Yahoo" title="Yahoo">
+				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".3s" role="listitem">
+					<img loading="lazy" src="img/yahoo_logo-200w.png" srcset="img/yahoo_logo-200w.png 200w, img/yahoo_logo-300w.png 300w" sizes="(max-width: 768px) 50vw, 200px" alt="Yahoo" title="Yahoo" width="200" height="69">
 				</li>
-				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".4s">
-					<img loading="lazy" src="img/paypal_logo.png" alt="PayPal" title="PayPal">
+				<li class="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown" data-wow-delay=".4s" role="listitem">
+					<img loading="lazy" src="img/paypal_logo-200w.png" srcset="img/paypal_logo-200w.png 200w, img/paypal_logo-300w.png 300w" sizes="(max-width: 768px) 50vw, 200px" alt="PayPal" title="PayPal" width="200" height="69">
 				</li>
 			</ul>
 		</div>
@@ -128,27 +138,27 @@
 			<div class="row">
 				<div class="col-md-6 text-center animated wow fadeInLeft">
 					<div class="iphone">
-						<img loading="lazy" src="img/iphone.png" alt="iPhone mockup" title="iPhone App">
+						<img loading="lazy" src="img/iphone.webp" alt="iPhone mockup" title="iPhone App" width="389" height="755">
 					</div>
 				</div>
 				<div class="col-md-6 animated wow fadeInRight">
 					<div class="features_list">
 						<h1 class="text-uppercase">The Greatest Products Ever Created</h1>
 						<p>Seuismod ligula ipsum vulputate tellus quisque dictum tortor at purus faucibus tincidunt, pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-						<ul class="list-unstyled">
-							<li class="camera_icon">
+						<ul class="list-unstyled" role="list">
+							<li class="camera_icon" role="listitem">
 								<span>Euismod ligula ipsum vulputate tellus.</span>
 							</li>
-							<li class="video_icon">
+							<li class="video_icon" role="listitem">
 								<span>Morbi non efficitur nibh sit amet est eros.</span>
 							</li>
-							<li class="eye_icon">
+							<li class="eye_icon" role="listitem">
 								<span>Fusce faucibus ante liberonec luctus egestas.</span>
 							</li>
-							<li class="pic_icon">
+							<li class="pic_icon" role="listitem">
 								<span>Quisque pretium malesuada ornare.</span>
 							</li>
-							<li class="loc_icon">
+							<li class="loc_icon" role="listitem">
 								<span>Cras interdum vestibulum dolor.</span>
 							</li>
 						</ul>
@@ -180,34 +190,34 @@
 
 			<div class="row text-center">
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay="0s">
-					<img loading="lazy" src="img/f_icon1.png" alt="Feature icon 1" title="Feature 1">
+					<img loading="lazy" src="img/f_icon1.png" alt="Feature icon 1" title="Feature 1" width="70" height="70">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".1s">
-					<img loading="lazy" src="img/f_icon2.png" alt="Feature icon 2" title="Feature 2">
+					<img loading="lazy" src="img/f_icon2.png" alt="Feature icon 2" title="Feature 2" width="70" height="70">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".2s">
-					<img loading="lazy" src="img/f_icon3.png" alt="Feature icon 3" title="Feature 3">
+					<img loading="lazy" src="img/f_icon3.png" alt="Feature icon 3" title="Feature 3" width="70" height="70">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
 			</div>
 			<div class="row text-center">
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay="0s">
-					<img loading="lazy" src="img/f_icon4.png" alt="Feature icon 4" title="Feature 4">
+					<img loading="lazy" src="img/f_icon4.png" alt="Feature icon 4" title="Feature 4" width="70" height="70">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".1s">
-					<img loading="lazy" src="img/f_icon5.png" alt="Feature icon 5" title="Feature 5">
+					<img loading="lazy" src="img/f_icon5.png" alt="Feature icon 5" title="Feature 5" width="70" height="70">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
 				<div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".2s">
-					<img loading="lazy" src="img/f_icon6.png" alt="Feature icon 6" title="Feature 6">
+					<img loading="lazy" src="img/f_icon6.png" alt="Feature icon 6" title="Feature 6" width="70" height="70">
 					<h1 class="text-uppercase">malesuada fames turpis.</h1>
 					<p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
 				</div>
@@ -227,8 +237,8 @@
 		<div class="container">
 			<div class="testimonials_list">
 
-				<ul class="list-unstyled text-center slides clearfix" id="tslider">
-					<li>
+				<ul class="list-unstyled text-center slides clearfix" id="tslider" role="list">
+					<li role="listitem">
 						<blockquote>
 							<p>Integer pharetra tellus varius, dictum erat vel, maximus tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec pulvinar vehicula donec congue tortor eget sem condimentum, ut tempor massa porttitor. Praesent tincidunt mi orci  in sollicitudin mi dapibus dapibus pellentesque habitant morbi tristique senectus et malesuada fames turpis egestas.</p>
 							<span class="author text-uppercase">John Doe</span>
@@ -237,7 +247,7 @@
 						</blockquote>
 					</li>
 
-					<li>
+					<li role="listitem">
 						<blockquote>
 							<p>Integer pharetra tellus varius, dictum erat vel, maximus tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec pulvinar vehicula donec congue tortor eget sem condimentum, ut tempor massa porttitor. Praesent tincidunt mi orci  in sollicitudin mi dapibus dapibus pellentesque habitant morbi tristique senectus et malesuada fames turpis egestas.</p>
 							<span class="author text-uppercase">Alex Fredy</span>
@@ -246,7 +256,7 @@
 						</blockquote>
 					</li>
 
-					<li>
+					<li role="listitem">
 						<blockquote>
 							<p>Integer pharetra tellus varius, dictum erat vel, maximus tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec pulvinar vehicula donec congue tortor eget sem condimentum, ut tempor massa porttitor. Praesent tincidunt mi orci  in sollicitudin mi dapibus dapibus pellentesque habitant morbi tristique senectus et malesuada fames turpis egestas.</p>
 							<span class="author text-uppercase">Sara Aliba</span>
@@ -274,7 +284,7 @@
 		<p class="cta_text animated wow fadeInDown">We're hiring. Join Our company!</p>
 		<form action="#" metohd="post" class="animated wow fadeIn" data-wow-duration="2s" id="submit_form">
 			<input type="email" id="mc-email" placeholder="Enter your email"/>
-			<button type="submit" id="mc_submit">
+			<button type="submit" id="mc_submit" aria-label="Subscribe to newsletter">
 				<i class="icon"></i>
 			</button>
 		</form>
@@ -290,20 +300,21 @@
 
 	<!--  Footer Section  -->
 	<footer>
-		<ul class="list-unstyled list-inline app_platform">
-			<li class="animated wow fadeInDown" data-wow-delay="0s">
-				<a href=""><img loading="lazy" src="img/android_icon.png" alt="Android" title="Android App"></a>
+		<ul class="list-unstyled list-inline app_platform" role="list">
+			<li class="animated wow fadeInDown" data-wow-delay="0s" role="listitem">
+				<a href=""><img loading="lazy" src="img/android_icon.png" alt="Android" title="Android App" width="50" height="50"></a>
 			</li>
-			<li class="animated wow fadeInDown" data-wow-delay=".1s">
-				<a href=""><img loading="lazy" src="img/ios_icon.png" alt="iOS" title="iOS App"></a>
+			<li class="animated wow fadeInDown" data-wow-delay=".1s" role="listitem">
+				<a href=""><img loading="lazy" src="img/ios_icon.png" alt="iOS" title="iOS App" width="50" height="50"></a>
 			</li>
-			<li class="animated wow fadeInDown" data-wow-delay=".2s">
-				<a href=""><img loading="lazy" src="img/windows_icon.png" alt="Windows" title="Windows App"></a>
+			<li class="animated wow fadeInDown" data-wow-delay=".2s" role="listitem">
+				<a href=""><img loading="lazy" src="img/windows_icon.png" alt="Windows" title="Windows App" width="50" height="50"></a>
 			</li>
 		</ul>
 		<p class="copyright animated wow fadeIn" data-wow-duration="2s"> <strong>Pixelhint</strong>
 	</footer>
 	<!--  End Footer Section  -->
+	</main>
 
 	<!-- Combined JavaScript loaded with defer for non-blocking -->
 	<script defer src="js/combined.min.js"></script>
