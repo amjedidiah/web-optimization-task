@@ -35,14 +35,14 @@ Conservative use of browser resource hints for critical resources only:
 - **Desktop:** Performance 96 | Accessibility 90 | Best Practices 100 | SEO 91
 - **Mobile:** Performance 76 | Accessibility 63 | Best Practices 96 | SEO 91
 
-**After Optimization:** [Optimized Site](https://pagespeed.web.dev/analysis/https-amjedidiah-github-io-web-optimization-task/v7j96wjtn2?form_factor=desktop)
+**After Optimization:** [Optimized Site](https://pagespeed.web.dev/analysis/https-amjedidiah-github-io-web-optimization-task/7ue9vrht8o?form_factor=desktop)
 
-- **Desktop:** Performance 92 | Accessibility 100 | Best Practices 100 | SEO 100
+- **Desktop:** Performance 100 | Accessibility 100 | Best Practices 100 | SEO 100
 - **Mobile:** Performance 93 | Accessibility 100 | Best Practices 100 | SEO 100
 
 | Desktop | Mobile |
 |---------|--------|
-| ![Desktop PageSpeed Score](https://i.ibb.co/tpkCxGfF/Screenshot-2025-11-06-at-22-49-49.png) | ![Mobile PageSpeed Score](https://i.ibb.co/JbPkXMD/Screenshot-2025-11-06-at-22-49-59.png) |
+| [![Desktop PageSpeed Score](https://i.ibb.co/4npPM6MB/Screenshot-2025-11-07-at-13-45-50.png)](https://i.ibb.co/4npPM6MB/Screenshot-2025-11-07-at-13-45-50.png) | [![Mobile PageSpeed Score](https://i.ibb.co/QFrwzb0b/Screenshot-2025-11-07-at-13-45-57.png)](https://i.ibb.co/QFrwzb0b/Screenshot-2025-11-07-at-13-45-57.png) |
 
 ### Key Improvements
 
