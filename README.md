@@ -10,7 +10,7 @@ Landing page for Keiko Corp with focus on performance optimization techniques in
 - Font loading optimization with `font-display: swap`
 - CSS/JS minification and bundling
 - Critical CSS inlining
-- Resource preloading
+- Resource hints (dns-prefetch, preload)
 - Responsive design
 - Email subscription integration
 
@@ -20,6 +20,13 @@ Landing page for Keiko Corp with focus on performance optimization techniques in
 - Owl Carousel
 - jQuery
 - Mailchimp integration
+
+## Resource Hints
+
+Conservative use of browser resource hints for critical resources only:
+
+- **`dns-prefetch`**: Early DNS resolution for YouTube video embed
+- **`preload`**: Critical above-the-fold resources (hero image, fonts) for LCP optimization
 
 ## Performance Scores
 
